@@ -20,31 +20,70 @@ export default class App extends React.Component{
 
   render(){
     return(
-      <View>
+      <View style={MeuEstilo.container}>
+
         <StatusBar backgroundColor="black" />
-        <TextInput underlineColorAndroid = "transparent" // INPUT DO TEXTO 1 
+        <TextInput style={MeuEstilo.input}
+        underlineColorAndroid = "transparent" // INPUT DO TEXTO 1 
         placeholder = "Digite o valor 1 "
         placeholderTextColor = "red"
         autoCapitalize = "none"
         onChangeText={this.atualizaValor1}
         keyboardType='numeric' />
 
-        <TextInput underlineColorAndroid = "transparent" // INPUT DO TEXTO 2
+        <TextInput style={MeuEstilo.input}
+        underlineColorAndroid = "transparent" // INPUT DO TEXTO 2
         placeholder = "Digite o valor 2 "
         placeholderTextColor = "red"
         autoCapitalize = "none"
         onChangeText={this.atualizaValor2}
         keyboardType='numeric' />
 
-      <TouchableOpacity onPress={()=>this.soma(this.state.valor1, this.state.valor2, this.state.resultado)}>
-       <Text> SOMAR </Text>
+      <TouchableOpacity style={MeuEstilo.botao}
+      onPress={()=>this.soma(this.state.valor1, this.state.valor2, this.state.resultado)}>
+        
+       <Text style={MeuEstilo.textoBotaoSomar}> SOMAR </Text>
        
       </TouchableOpacity>
       </View>
     )
   }
-
-
-
-
 }
+
+const MeuEstilo = StyleSheet.create({
+  fontegrande:{
+    fontSize:48,
+    //backgroundColor:'#333333',
+    color:'#111111',
+    flexGrow:1,
+    justifyContent:"center",
+    alignItems:"center",
+    padding:23,
+  },
+  container:{
+    padding:23,
+  },
+  input:{
+    margin:15,
+    height:40,
+    borderColor: '#7a42f4',
+    borderWidth: 1,
+  },
+  botao:{
+    backgroundColor: '#AAA2f4',
+    padding:10,
+    margin:15,
+    height:40,
+  },
+  textoBotaoSomar:{
+    color:'white',
+    alignItems:'center',
+    textAlign:'center',
+  },
+  switchstilo:{
+    flex:1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
+
+})
