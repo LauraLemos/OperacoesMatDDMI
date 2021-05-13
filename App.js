@@ -1,7 +1,14 @@
-//Aluna: LAURA ALVES LEMOS
+//Aluna: LAURA ALVES LEMOS - 6° INFO
+//Aluna: LAURA ALVES LEMOS - 6° INFO
+//Aluna: LAURA ALVES LEMOS - 6° INFO
+//Aluna: LAURA ALVES LEMOS - 6° INFO
 
 import * as React from 'react';
 import {Text, TouchableOpacity, TextInput, View, StyleSheet, StatusBar} from 'react-native';
+
+
+import MeuEstilo from './src/componentes/meuestilo'
+
 
 export default class App extends React.Component{
   state={
@@ -90,58 +97,6 @@ export default class App extends React.Component{
   }
 }
 
-const MeuEstilo = StyleSheet.create({
-  fontegrande:{
-    fontSize:48,
-    //backgroundColor:'#333333',
-    color:'#111111',
-    flexGrow:1,
-    justifyContent:"center",
-    alignItems:"center",
-    padding:23,
-  },
-  container:{
-    padding:23,
-  },
-  input:{
-    margin:15,
-    height:40,
-    borderColor: '#A52A2A',
-    borderWidth: 1,
-  },
-  botao:{
-    backgroundColor: '#AAA2f4',
-    padding:10,
-    margin:15,
-    height:40,
-  },
-  botaoD:{
-    backgroundColor: '#CD853F', 
-    padding:10,
-    margin:15,
-    height:40,
-  },
-  botaoM:{
-    backgroundColor: '#F08080', 
-    padding:10,
-    margin:15,
-    height:40,
-  },
-  botaoDV:{
-    backgroundColor: '#3CB371', 
-    padding:10,
-    margin:15,
-    height:40,
-  },
-  textoBotao:{
-    color:'white',
-    alignItems:'center',
-    textAlign:'center',
-  },
-  switchstilo:{
-    flex:1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  }
 
-})
+
+//Aluna: LAURA ALVES LEMOS - 6° INFO
