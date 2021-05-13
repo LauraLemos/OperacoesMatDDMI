@@ -62,24 +62,24 @@ export default class App extends React.Component{
         keyboardType ='numeric'/>
 
 <ScrollView style = {{padding:23}}>
-        <Text>                                                                                                                        Radio Button utilizando classe Expo</Text>
+        <Text style = {{textAlign:'center'}}> Radio Button utilizando classe Expo</Text>
         <RadioButton.Group
         onValueChange = {valorRadio => this.setState({valorRadio})}
         value = {this.state.valorRadio}>
           <View>
-            <Text>SOMA</Text> 
+            <Text>SOMA ↴</Text> 
             <RadioButton value='soma'/>
           </View>
           <View>
-            <Text>SUBTRAÇÃO</Text>
+            <Text>SUBTRAÇÃO ↴</Text>
             <RadioButton value='subtrair'/>
           </View>
           <View>
-            <Text>MULTIPLICAÇÃO</Text>
+            <Text>MULTIPLICAÇÃO ↴</Text>
             <RadioButton value='multiplicar'/>
           </View>
           <View>
-            <Text>DIVISÃO</Text>
+            <Text>DIVISÃO ↴</Text>
             <RadioButton value='dividir'/>
           </View>
         </RadioButton.Group>

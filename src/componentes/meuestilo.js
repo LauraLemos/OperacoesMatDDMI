@@ -1,4 +1,7 @@
-
+//Aluna: LAURA ALVES LEMOS - 6° INFO
+//Aluna: LAURA ALVES LEMOS - 6° INFO
+//Aluna: LAURA ALVES LEMOS - 6° INFO
+//Aluna: LAURA ALVES LEMOS - 6° INFO
 
 import {StyleSheet} from 'react-native'
 
