@@ -23,7 +23,7 @@ export default StyleSheet.create({
         borderWidth: 1,
       },
       botao:{
-        backgroundColor: '#AAA2f4',
+        backgroundColor: '#CD853F',
         padding:10,
         margin:15,
         height:40,
